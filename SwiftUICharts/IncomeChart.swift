@@ -26,7 +26,7 @@ class ChartViewModel: ObservableObject {
             Income(name: "Duchy of Lancaster", amount: 603_623_223)
         ]
     
-    func changeData() {
+    func updateData() {
         self.data = totalData
     }
 }
@@ -44,10 +44,12 @@ struct IncomeChart: View {
             }
         }
         .chartYScale(domain: [0, 650_608_642]) // needed to ensure animation only affects bars
+        .chartXAxis(.hidden)
+        .chartYAxis(.hidden)
         .padding()
         .onAppear {
             withAnimation(.easeInOut(duration: 1.2)) {
-                viewModel.changeData()
+                viewModel.updateData()
             }
         }
     }
