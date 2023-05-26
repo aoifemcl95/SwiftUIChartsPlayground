@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		19863FD32A2008E80083CDE9 /* SwiftUIChartsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863FD22A2008E80083CDE9 /* SwiftUIChartsApp.swift */; };
-		19863FD52A2008E80083CDE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863FD42A2008E80083CDE9 /* ContentView.swift */; };
+		19863FD52A2008E80083CDE9 /* IncomeChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863FD42A2008E80083CDE9 /* IncomeChart.swift */; };
 		19863FD72A2008E90083CDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19863FD62A2008E90083CDE9 /* Assets.xcassets */; };
 		19863FDA2A2008E90083CDE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19863FD92A2008E90083CDE9 /* Preview Assets.xcassets */; };
 		19863FE42A2008EA0083CDE9 /* SwiftUIChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863FE32A2008EA0083CDE9 /* SwiftUIChartsTests.swift */; };
 		19863FEE2A2008EA0083CDE9 /* SwiftUIChartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863FED2A2008EA0083CDE9 /* SwiftUIChartsUITests.swift */; };
 		19863FF02A2008EA0083CDE9 /* SwiftUIChartsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863FEF2A2008EA0083CDE9 /* SwiftUIChartsUITestsLaunchTests.swift */; };
+		19863FFD2A200F070083CDE9 /* IncomeGrowthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863FFC2A200F070083CDE9 /* IncomeGrowthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		19863FCF2A2008E80083CDE9 /* SwiftUICharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19863FD22A2008E80083CDE9 /* SwiftUIChartsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChartsApp.swift; sourceTree = "<group>"; };
-		19863FD42A2008E80083CDE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		19863FD42A2008E80083CDE9 /* IncomeChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeChart.swift; sourceTree = "<group>"; };
 		19863FD62A2008E90083CDE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19863FD92A2008E90083CDE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		19863FDF2A2008EA0083CDE9 /* SwiftUIChartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIChartsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		19863FE92A2008EA0083CDE9 /* SwiftUIChartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIChartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19863FED2A2008EA0083CDE9 /* SwiftUIChartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChartsUITests.swift; sourceTree = "<group>"; };
 		19863FEF2A2008EA0083CDE9 /* SwiftUIChartsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChartsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		19863FFC2A200F070083CDE9 /* IncomeGrowthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeGrowthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				19863FD22A2008E80083CDE9 /* SwiftUIChartsApp.swift */,
-				19863FD42A2008E80083CDE9 /* ContentView.swift */,
+				19863FD42A2008E80083CDE9 /* IncomeChart.swift */,
+				19863FFC2A200F070083CDE9 /* IncomeGrowthView.swift */,
 				19863FD62A2008E90083CDE9 /* Assets.xcassets */,
 				19863FD82A2008E90083CDE9 /* Preview Content */,
 			);
@@ -257,7 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19863FD52A2008E80083CDE9 /* ContentView.swift in Sources */,
+				19863FD52A2008E80083CDE9 /* IncomeChart.swift in Sources */,
+				19863FFD2A200F070083CDE9 /* IncomeGrowthView.swift in Sources */,
 				19863FD32A2008E80083CDE9 /* SwiftUIChartsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
