@@ -20,7 +20,7 @@ struct IncomeGrowth: Identifiable {
 }
 
 struct IncomeData {
-    let source: String // purposely a String in order to get foregroundStyle(by:) to work correctly 
+    let source: String // purposely a String in order to get foregroundStyle(by:) to work correctly
     let income: [IncomeGrowth]
 }
 
@@ -80,9 +80,6 @@ struct IncomeGrowthView: View {
             }
             
         }
-        // FIXME:
-        // Style line depending on source
-        // Remove extra line?
         .padding()
         .chartXScale(domain: [1950, 2020])
         .chartXAxis {
