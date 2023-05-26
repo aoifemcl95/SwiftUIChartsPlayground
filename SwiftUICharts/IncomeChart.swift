@@ -29,13 +29,6 @@ class ChartViewModel: ObservableObject {
     func changeData() {
         self.data = totalData
     }
-    // TODO: Think about how to animate the bar
-    // On appear increment the amount over time and redraw chart when value changes
-}
-
-struct BarViewModel {
-    let title: String
-    @State var amount: Int = 0
 }
 
 struct IncomeChart: View {
@@ -45,14 +38,16 @@ struct IncomeChart: View {
             ForEach(viewModel.data, id: \.name) { incomeData in
                 BarMark(x: .value("Name", incomeData.name), y: .value("Cumulative amount", incomeData.amount))
                     .foregroundStyle(by: .value("Name", incomeData.name))
+                    .annotation(alignment: .top) {
+                        Text("£\(incomeData.amount)")
+                    }
             }
         }
-        // FIXME: format y axis labels
+        .chartYScale(domain: [0, 650_608_642]) // needed to ensure animation only affects bars
         .padding()
         .onAppear {
-            withAnimation(.easeInOut(duration: 0.8)) {
+            withAnimation(.easeInOut(duration: 1.4)) {
                 viewModel.changeData()
-//                viewModel._data = viewModel.totalData
             }
         }
     }
