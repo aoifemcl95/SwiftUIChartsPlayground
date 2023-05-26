@@ -39,7 +39,7 @@ struct IncomeChart: View {
                 BarMark(x: .value("Name", incomeData.name), y: .value("Cumulative amount", incomeData.amount))
                     .foregroundStyle(by: .value("Name", incomeData.name))
                     .annotation(alignment: .top) {
-                        Text("£\(incomeData.amount)")
+                        Text(formattedString(for:incomeData.amount))
                     }
             }
         }
@@ -50,6 +50,14 @@ struct IncomeChart: View {
                 viewModel.changeData()
             }
         }
+    }
+    
+    func formattedString(for value: Int) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+                formatter.minimumIntegerDigits = 7
+        let number = NSNumber(value: value)
+        return formatter.string(from: number) ?? ""
     }
 }
 
