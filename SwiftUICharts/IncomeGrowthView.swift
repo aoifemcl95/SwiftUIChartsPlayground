@@ -66,7 +66,6 @@ struct IncomeGrowthViewModel {
     
 }
 
-// FIXME:Format year on x axis
 struct IncomeGrowthView: View {
     var body: some View {
         Chart {

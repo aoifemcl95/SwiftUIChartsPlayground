@@ -15,6 +15,7 @@
 		19863FEE2A2008EA0083CDE9 /* SwiftUIChartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863FED2A2008EA0083CDE9 /* SwiftUIChartsUITests.swift */; };
 		19863FF02A2008EA0083CDE9 /* SwiftUIChartsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863FEF2A2008EA0083CDE9 /* SwiftUIChartsUITestsLaunchTests.swift */; };
 		19863FFD2A200F070083CDE9 /* IncomeGrowthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863FFC2A200F070083CDE9 /* IncomeGrowthView.swift */; };
+		19863FFF2A20EFCD0083CDE9 /* StackedChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19863FFE2A20EFCD0083CDE9 /* StackedChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		19863FED2A2008EA0083CDE9 /* SwiftUIChartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChartsUITests.swift; sourceTree = "<group>"; };
 		19863FEF2A2008EA0083CDE9 /* SwiftUIChartsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChartsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		19863FFC2A200F070083CDE9 /* IncomeGrowthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeGrowthView.swift; sourceTree = "<group>"; };
+		19863FFE2A20EFCD0083CDE9 /* StackedChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackedChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				19863FD22A2008E80083CDE9 /* SwiftUIChartsApp.swift */,
 				19863FD42A2008E80083CDE9 /* IncomeChart.swift */,
 				19863FFC2A200F070083CDE9 /* IncomeGrowthView.swift */,
+				19863FFE2A20EFCD0083CDE9 /* StackedChartView.swift */,
 				19863FD62A2008E90083CDE9 /* Assets.xcassets */,
 				19863FD82A2008E90083CDE9 /* Preview Content */,
 			);
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19863FD52A2008E80083CDE9 /* IncomeChart.swift in Sources */,
+				19863FFF2A20EFCD0083CDE9 /* StackedChartView.swift in Sources */,
 				19863FFD2A200F070083CDE9 /* IncomeGrowthView.swift in Sources */,
 				19863FD32A2008E80083CDE9 /* SwiftUIChartsApp.swift in Sources */,
 			);
