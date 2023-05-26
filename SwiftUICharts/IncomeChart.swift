@@ -46,7 +46,7 @@ struct IncomeChart: View {
         .chartYScale(domain: [0, 650_608_642]) // needed to ensure animation only affects bars
         .padding()
         .onAppear {
-            withAnimation(.easeInOut(duration: 1.4)) {
+            withAnimation(.easeInOut(duration: 1.2)) {
                 viewModel.changeData()
             }
         }
@@ -56,6 +56,7 @@ struct IncomeChart: View {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
                 formatter.minimumIntegerDigits = 7
+        formatter.maximumFractionDigits = 0
         let number = NSNumber(value: value)
         return formatter.string(from: number) ?? ""
     }
